@@ -12,7 +12,7 @@
     <h2>Code Cart</h2>
     <img src="./assets/cyber-3400789_1280.jpg" alt="logo">
   </section>
-  <section>
+  <section class="shop-section">
     <div>
       <img src="./assets/edl-cirlcle-1.svg" alt="code">
       <div>
@@ -23,7 +23,7 @@
       <p>+</p>
     </div>
     <div>
-      <img src="./assets/edl-cirlcle-2.svg" alt="code">
+      <img src="./assets/edl-cirlcle-1.svg" alt="code">
       <div>
         <p>CSS</p>
         <p>overall site design and presentation... lets style your dreams</p>
@@ -41,12 +41,44 @@
       <p>+</p>
     </div>
   </section>
-  <section>
-    <h2></h2>
+  <section class="cart-section">
+    <h2>Cart</h2>
     <div>
+      <div><div><span>item pulled from js</span> <p>Remove item</p></div> <p>$pulled from js</p> </div>
+      <div><p>Total Price: </p><p>$pulled from js</p></div>
     </div>
     <button>Give notes and finalize!</button>
   </section>
+  <div class="hidden">
+    <form action="my-special-actionplace" method="post">
+      <ul>
+        <li>final total pulled from JS</li>
+        <li>Card details</li>
+        <li>
+          <label for="name">Full Name: 
+            <input placeholder="John Smith" type="text" id="name" name="name">
+          </label>
+        </li>
+        <li>
+          <label for="Card-number">Card #: 
+            <input placeholder="1234 5678 9012 3456" type="number" id="Card-number" name="Card-number" maxlength="16" minlength="16">
+          </label>
+        </li>
+        <li>
+          <label for="cvv">CVV:  
+            <input placeholder="1234" type="number" id="cvv" name="cvv" maxlength="4" minlength="4">
+          </label>
+        </li>
+        <li>
+          <label for="user-notes">Notes/Requests: </label>  
+          <textarea resize="none" placeholder="I am hoping to get" type="number" id="cvv" name="cvv" maxlength="4" minlength="4"></textarea>
+        </li>
+        <li>
+        <button>Send Order</button>
+        </li>
+      </ul>
+    </form>
+  </div>
 
   <script src="./js/index.js"></script>
 </body>
