@@ -8,55 +8,85 @@
 </head>
 <body>
   <section class="header">
-    <h1>EthanDotLog's</h1>
+    <img class="header-img" src="./assets/edl-banner.svg"  alt="logo">
     <h2>Code Cart</h2>
-    <img src="./assets/cyber-3400789_1280.jpg" alt="logo">
+    <img id="header-background" src="./assets/cyber-3400789_1280.jpg">
   </section>
   <section class="shop-section">
-    <div>
-      <img src="./assets/edl-cirlcle-1.svg" alt="code">
-      <div>
+    <div class="shop-item-block">
+      <div class="shop-img-block">
+        <img src="./assets/edl-cirlcle-1.svg" alt="code">
+      </div>
+      <div class="shop-info-block">
         <p>HTML</p>
         <p>overall site layout and foundation... lets lay the groundwork your desires</p>
         <p>$10</p>
       </div>
-      <p>+</p>
+      <div class="shop-add-block">
+        <p>+</p>
+      </div>
     </div>
-    <div>
-      <img src="./assets/edl-cirlcle-1.svg" alt="code">
-      <div>
+    <div class="shop-item-block">
+      <div class="shop-img-block">
+        <img src="./assets/edl-cirlcle-1.svg" alt="code">
+      </div>
+      <div class="shop-info-block">
         <p>CSS</p>
         <p>overall site design and presentation... lets style your dreams</p>
         <p>$20</p>
       </div>
-      <p>+</p>
+      <div class="shop-add-block">
+        <p>+</p>
+      </div>
     </div>
-    <div>
-      <img  src="./assets/edl-cirlcle-1.svg" alt="code">
-      <div>
+    <div class="shop-item-block">
+      <div class="shop-img-block">
+        <img src="./assets/edl-cirlcle-1.svg" alt="code">
+      </div>
+      <div class="shop-info-block">
         <p>JS</p>
         <p>the engine behind your site. why show the work a bike when it can be a Malarian</p>
         <p>$30</p>
       </div>
-      <p>+</p>
+      <div class="shop-add-block">
+        <p>+</p>
+      </div>
     </div>
   </section>
   <section class="cart-section">
     <h2>Cart</h2>
-    <div>
-      <div><div><span>item pulled from js</span> <p>Remove item</p></div> <p>$pulled from js</p> </div>
-      <div><p>Total Price: </p><p>$pulled from js</p></div>
+    <div class="cart-info">
+      <hr>
+      <ul>
+        <li>
+          <span>
+            <span>item pulled from js</span>
+            <span>Remove item</span>
+          </span>
+          <span>
+            $js.pull
+          </span>
+        </li>
+      </ul>
+      <hr>
+      <h3>
+        <span>Total Price: </span>
+        <span>$pulled from js</span>
+      </h3>
     </div>
     <button>Give notes and finalize!</button>
   </section>
   <div class="hidden">
+    <p>Please fill out this for payment processing and any final notes on your requested services. no charges will be made till service is finalized. The completion of this is in noway an implied acceptance of service.</p>
     <form action="my-special-actionplace" method="post">
+      <h2>Your final total is 
+        <span>total pulled from JS</span>
+      </h2>
+      <h3>Card details</h3>
       <ul>
-        <li>final total pulled from JS</li>
-        <li>Card details</li>
         <li>
           <label for="name">Full Name: 
-            <input placeholder="John Smith" type="text" id="name" name="name">
+            <input placeholder="John Smith" type="text" id="name" name="name" minlength="3">
           </label>
         </li>
         <li>
@@ -71,13 +101,12 @@
         </li>
         <li>
           <label for="user-notes">Notes/Requests: </label>  
-          <textarea resize="none" placeholder="I am hoping to get" type="number" id="cvv" name="cvv" maxlength="4" minlength="4"></textarea>
-        </li>
-        <li>
-        <button>Send Order</button>
+          <textarea resize="none" placeholder="I am hoping to get" type="number" id="cvv" name="cvv" minlength= 4></textarea>
         </li>
       </ul>
     </form>
+    <button>Send Order</button>
+    <div class="close">X</div>
   </div>
 
   <script src="./js/index.js"></script>
