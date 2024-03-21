@@ -23,7 +23,7 @@
         <p>$10</p>
       </div>
       <div class="shop-add-block">
-        <p>+</p>
+        <p class="add-item" id="HTML">+</p>
       </div>
     </div>
     <div class="shop-item-block">
@@ -36,7 +36,7 @@
         <p>$20</p>
       </div>
       <div class="shop-add-block">
-        <p>+</p>
+        <p class="add-item" id="CSS">+</p>
       </div>
     </div>
     <div class="shop-item-block">
@@ -49,7 +49,7 @@
         <p>$30</p>
       </div>
       <div class="shop-add-block">
-        <p>+</p>
+        <p class="add-item" id="JavaScript">+</p>
       </div>
     </div>
   </section>
@@ -57,26 +57,18 @@
     <h2>Cart</h2>
     <div class="cart-info">
       <hr>
-      <ul>
-        <li>
-          <span>
-            <span>item pulled from js</span>
-            <span>Remove item</span>
-          </span>
-          <span>
-            $js.pull
-          </span>
-        </li>
+      <ul id="cart-list">
+        
       </ul>
       <hr>
       <h3>
         <span>Total Price: </span>
-        <span>$pulled from js</span>
+        <span id="cart-total">$pulled from js</span>
       </h3>
     </div>
-    <button>Give notes and finalize!</button>
+    <button id="que-submit">Give notes and finalize!</button>
   </section>
-  <div class="hidden">
+  <div id="popup" class="hidden">
     <p>Please fill out this for payment processing and any final notes on your requested services. no charges will be made till service is finalized. The completion of this is in noway an implied acceptance of service.</p>
     <form action="my-special-actionplace" method="post">
       <h2>Your final total is 
@@ -101,7 +93,7 @@
         </li>
         <li>
           <label for="user-notes">Notes/Requests: </label>  
-          <textarea resize="none" placeholder="I am hoping to get" type="number" id="cvv" name="cvv" minlength= 4></textarea>
+          <textarea id="user-note" resize="none" placeholder="I am hoping to get" type="number" id="cvv" name="cvv" minlength= 4></textarea>
         </li>
       </ul>
     </form>
@@ -109,6 +101,6 @@
     <div class="close">X</div>
   </div>
 
-  <script src="./js/index.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>

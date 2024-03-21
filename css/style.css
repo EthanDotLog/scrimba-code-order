@@ -230,19 +230,47 @@ body {
   flex-direction: column;
   width: 75%;
   align-items: center;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .hidden ul li, .hidden ul li label {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: var(--f-xs);
+}
+
+.hidden p {
+  font-size: var(--f-xs);
+  font-style: italic;
+}
+
+.hidden h2 {
+  font-size: var(--f-xs);
+}
+
+.hidden h3 {
+  font-size: var(--f-s);
+}
+
+.hidden input {
+  border: none;
+  font-size: var(--f-s);
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+
+#user-note {
+  border: none;
+  font-size: var(--f-xs);
+  line-height: 1.5rem;
+  width: 40ch;
 }
 
 .close {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: .5rem;
+  right: .5rem;
   height: 2.5ch;
   width: 2.5ch;
   text-align: center;
@@ -291,6 +319,9 @@ body {
     --m-l: .8rem;
     --m-xl: 1rem;
   }
+  .header-img {
+    height: 4rem;
+  }
   .shop-img-block img {
     height: 4.5rem;
   }
@@ -323,5 +354,13 @@ body {
     width: 2rem;
     height: 2rem;
     font-size: 1.3rem;
+  }
+  
+  h3 span {
+    font-size: var(--f-xs);
+  }
+
+  .cart-info ul li span {
+    font-size: var(--f-xs);
   }
 }
