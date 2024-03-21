@@ -44,7 +44,7 @@
         <img src="./assets/edl-cirlcle-1.svg" alt="code">
       </div>
       <div class="shop-info-block">
-        <p>JS</p>
+        <p>JavaScript</p>
         <p>the engine behind your site. why show the work a bike when it can be a Malarian</p>
         <p>$30</p>
       </div>
@@ -72,7 +72,7 @@
     <p>Please fill out this for payment processing and any final notes on your requested services. no charges will be made till service is finalized. The completion of this is in noway an implied acceptance of service.</p>
     <form action="my-special-actionplace" method="post">
       <h2>Your final total is 
-        <span>total pulled from JS</span>
+        <span id="total-checkout">total pulled from JS</span>
       </h2>
       <h3>Card details</h3>
       <ul>
@@ -83,12 +83,12 @@
         </li>
         <li>
           <label for="Card-number">Card #: 
-            <input placeholder="1234 5678 9012 3456" type="number" id="Card-number" name="Card-number" maxlength="16" minlength="16">
+            <input onKeyPress="if(this.value.length==16) return false;" placeholder="1234 5678 9012 3456" type="number" id="Card-number" name="Card-number" maxlength="16" minlength="16">
           </label>
         </li>
         <li>
           <label for="cvv">CVV:  
-            <input placeholder="1234" type="number" id="cvv" name="cvv" maxlength="4" minlength="4">
+            <input onKeyPress="if(this.value.length==4) return false;" placeholder="1234" type="number" id="cvv" name="cvv" maxlength="4" minlength="4">
           </label>
         </li>
         <li>

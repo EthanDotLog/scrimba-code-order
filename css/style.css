@@ -32,7 +32,10 @@
 }
 
 
-
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 * {
   font-size: 16px;
@@ -45,7 +48,7 @@
 }
 
 body {
-  height: 100vh;  
+  height: clamp(667px, 100vh, 100vh);  
 }
 
 /* HEADER */
@@ -180,9 +183,11 @@ body {
   height: 100%;
 }
 
-.cart-info ul {
+#cart-list {
+  width: 100%;
   height: 70%;
 }
+  
 
 .cart-info ul li {
   font-size: var(--f-xs);
@@ -208,6 +213,7 @@ body {
   top: 15%;
   left: 0;
   bottom: 0;
+  right: 0;
   display: flex;
   justify-content: space-around;
   align-content: center;
@@ -265,6 +271,11 @@ body {
   font-size: var(--f-xs);
   line-height: 1.5rem;
   width: 40ch;
+}
+
+.hidden button {
+  width: 60%;
+  margin: 0 auto;
 }
 
 .close {

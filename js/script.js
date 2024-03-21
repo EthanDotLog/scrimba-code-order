@@ -11,8 +11,19 @@ document.querySelectorAll(".add-item").forEach(element => {
   })
 });
 
+
+const makeRemove = () => {
+  document.querySelectorAll(".remove-item").forEach(element => {
+  element.addEventListener("click", (e) => {
+  const target = e.target.getAttribute("data-type")
+  userCart[target]--
+  renderResults()
+  })
+});}
+
 document.getElementById("que-submit").addEventListener("click", () => {
   popup.style.visibility = "visible";
+  document.getElementById("total-checkout").innerHTML = `$${userCart.total()}.00`;
 })
 document.querySelector(".close").addEventListener("click", () => {
   popup.style.visibility = "hidden";
@@ -46,7 +57,7 @@ const renderResults = () => {
         cartList.innerHTML += `<li>
           <span>
             <span>HTML </span>
-            <span> Remove</span>
+            <a data-type="HTML" class="remove-item"> Remove</a>
           </span>
           <span>
             $10.00
@@ -56,7 +67,7 @@ const renderResults = () => {
         cartList.innerHTML += `<li>
         <span>
           <span>${userCart.HTML}X HTML </span>
-          <span> Remove 1x</span>
+          <a data-type="HTML" class="remove-item"> Remove 1x</a>
         </span>
         <span>
          $${userCart.HTML * 10}.00
@@ -69,7 +80,7 @@ const renderResults = () => {
         cartList.innerHTML += `<li>
         <span>
           <span>CSS </span>
-          <span> Remove</span>
+          <a data-type="CSS" class="remove-item"> Remove</a>
         </span>
         <span>
           $20.00
@@ -79,7 +90,7 @@ const renderResults = () => {
           cartList.innerHTML += `<li>
         <span>
           <span>${userCart.CSS}X CSS </span>
-          <span> Remove 1x</span>
+          <a data-type="CSS" class="remove-item"> Remove 1x</a>
         </span>
         <span>
           $${userCart.CSS * 20}.00
@@ -92,17 +103,17 @@ const renderResults = () => {
         cartList.innerHTML += `<li>
         <span>
           <span>JavaScript </span>
-          <span>Remove</span>
+          <a data-type="JavaScript" class="remove-item">Remove</a>
         </span>
         <span>
-          $10.00
+          $30.00
         </span>
       </li>`
         }else {
           cartList.innerHTML += `<li>
         <span>
           <span>${userCart.JavaScript}X JavaScript </span>
-          <span> Remove 1x</span>
+          <a data-type="JavaScript" class="remove-item"> Remove 1x</a>
         </span>
         <span>
           $${userCart.JavaScript * 30}.00
@@ -111,11 +122,10 @@ const renderResults = () => {
         }
     }
   }
-  cartTotal.innerHTML = `$${userCart.total()}.00`
+  cartTotal.innerHTML = `$${userCart.total()}.00`;
+  makeRemove()
 }
 
-
-renderResults()
 
 
 
