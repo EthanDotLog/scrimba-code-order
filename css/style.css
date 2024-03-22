@@ -154,6 +154,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  user-select: none;
 }
 
 .shop-add-block p:hover {
@@ -192,11 +194,14 @@ body {
 
 #cart-list li span span:first-of-type{
   font-weight: bold;
+  user-select: none;
 }
 
 .remove-item {
   font-size: var(--f-xs);
   color: rgb(114, 114, 114);
+  cursor: pointer;
+  user-select: none;
 }
 
 .cart-info ul li, .cart-info h3 {
@@ -208,6 +213,8 @@ body {
   padding: var(--m-xs) var(--m-m);
   font-size: var(--f-xs);
   font-weight: bold;
+  user-select: none;
+  cursor: pointer;
 }
 
 
@@ -282,6 +289,8 @@ body {
 .hidden button {
   width: 60%;
   margin: 0 auto;
+  user-select: none;
+  cursor: pointer;
 }
 
 .close {
@@ -294,6 +303,8 @@ body {
   cursor: pointer;
   color: var(--off-white);
   background-color: var(--blue);
+  user-select: none;
+  cursor: pointer;
 }
 
 .close:hover {
