@@ -64,8 +64,9 @@ body {
 }
 
 .header-img {
-  height: 5rem;
+  height: 4.5rem;
   margin-right: auto;
+  margin-bottom: -.4rem;
 }
 
 .header h2 {
@@ -189,8 +190,13 @@ body {
 }
   
 
-.cart-info ul li {
+#cart-list li span span:first-of-type{
+  font-weight: bold;
+}
+
+.remove-item {
   font-size: var(--f-xs);
+  color: rgb(114, 114, 114);
 }
 
 .cart-info ul li, .cart-info h3 {

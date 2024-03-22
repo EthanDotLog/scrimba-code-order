@@ -45,7 +45,7 @@ const renderResults = () => {
     cartList.innerHTML = `<li>
     <span>
       <span>Add some items to your cart!</span>
-      <span>Nothing to remove</span>
+      <span class="remove-item-default">Nothing to remove</span>
     </span>
     <span>
       $0.00
